@@ -14,158 +14,146 @@
 @gray-light:             lighten(@gray-base, 46.7%); // #777
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
-@brand-primary:         #02b5f9; 
-@brand-primary-2:       #008ff4;
-@brand-secondary:       #ff8339;
-@brand-secondary-2:     #ffac1c;
-@brand-success:         #58cf7b;
-@brand-success-2:       #23bfb4;
+/*@brand-primary:         #2090ea;
+@brand-success:         #4CAF50;
 @brand-info:            #03A9F4;
 @brand-warning:         #FFB300;
-@brand-danger:          #F44336;
+@brand-danger:          #F44336;*/
+@brand-primary:         #004852;
+@brand-success:         #004852;
+@brand-info:            #395DE1;
+@brand-warning:         #d7c61a;
+@brand-danger:          #E04748;
+@brand-secondary:       #CAF263;
 
 
+//Inter font
+
+//Thin 100
 @font-face {
-  font-family: 'PoppinsBlack';
-  src: url('fonts/Poppins/Poppins-Black.eot');
-  src: url('fonts/Poppins/Poppins-Black.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Poppins/Poppins-Black.woff') format('woff'),
-      url('fonts/Poppins/Poppins-Black.ttf') format('truetype'),
-      url('fonts/Poppins/Poppins-Black.svg#Poppins-Black') format('svg');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+  font-family: 'Interthin';
+  src: url('fonts/Inter/Inter-Thin.eot');
+  src: url('fonts/Inter/Inter-Thin.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Inter/Inter-Thin.woff') format('woff'),
+  url('fonts/Inter/Inter-Thin.ttf') format('truetype'),
+  url('fonts/Inter/Inter-Thin.svg#Interthin') format('svg');
+    font-weight: 100;
+    font-style: normal;
 }
-
+//Extralight-200
 @font-face {
-  font-family: 'PoppinsBold';
-  src: url('fonts/Poppins/Poppins-Bold.eot');
-  src: url('fonts/Poppins/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Poppins/Poppins-Bold.woff') format('woff'),
-      url('fonts/Poppins/Poppins-Bold.ttf') format('truetype'),
-      url('fonts/Poppins/Poppins-Bold.svg#Poppins-Bold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+  font-family: 'InterExtraLight';
+  src: url('fonts/Inter/Inter-ExtraLight.eot');
+  src: url('fonts/Inter/Inter-ExtraLight.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Inter/Inter-ExtraLight.woff') format('woff'),
+  url('fonts/Inter/Inter-ExtraLight.ttf') format('truetype'),
+  url('fonts/Inter/Inter-ExtraLight.svg#InterExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
 }
-
+//Light -300
 @font-face {
-  font-family: 'PoppinsLight';
-  src: url('fonts/Poppins/Poppins-Light.eot');
-  src: url('fonts/Poppins/Poppins-Light.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Poppins/Poppins-Light.woff') format('woff'),
-      url('fonts/Poppins/Poppins-Light.ttf') format('truetype'),
-      url('fonts/Poppins/Poppins-Light.svg#Poppins-Light') format('svg');
+  font-family: 'InterLight';
+  src: url('fonts/Inter/Inter-Light.eot');
+  src: url('fonts/Inter/Inter-Light.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Inter/Inter-Light.woff') format('woff'),
+  url('fonts/Inter/Inter-Light.ttf') format('truetype'),
+  url('fonts/Inter/Inter-Light.svg#InterLight') format('svg');
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
 }
-
+//Regular- 400
 @font-face {
-  font-family: 'PoppinsMedium';
-  src: url('fonts/Poppins/Poppins-Medium.eot');
-  src: url('fonts/Poppins/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Poppins/Poppins-Medium.woff') format('woff'),
-      url('fonts/Poppins/Poppins-Medium.ttf') format('truetype'),
-      url('fonts/Poppins/Poppins-Medium.svg#Poppins-Medium') format('svg');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'PoppinsExtraBold';
-  src: url('fonts/Poppins/Poppins-ExtraBold.eot');
-  src: url('fonts/Poppins/Poppins-ExtraBold.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Poppins/Poppins-ExtraBold.woff') format('woff'),
-      url('fonts/Poppins/Poppins-ExtraBold.ttf') format('truetype'),
-      url('fonts/Poppins/Poppins-ExtraBold.svg#Poppins-ExtraBold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'PoppinsExtraLight';
-  src: url('fonts/Poppins/Poppins-ExtraLight.eot');
-  src: url('fonts/Poppins/Poppins-ExtraLight.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Poppins/Poppins-ExtraLight.woff') format('woff'),
-      url('fonts/Poppins/Poppins-ExtraLight.ttf') format('truetype'),
-      url('fonts/Poppins/Poppins-ExtraLight.svg#Poppins-ExtraLight') format('svg');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'PoppinsThin';
-  src: url('fonts/Poppins/Poppins-Thin.eot');
-  src: url('fonts/Poppins/Poppins-Thin.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Poppins/Poppins-Thin.woff') format('woff'),
-      url('fonts/Poppins/Poppins-Thin.ttf') format('truetype'),
-      url('fonts/Poppins/Poppins-Thin.svg#Poppins-Thin') format('svg');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'PoppinsRegular';
-  src: url('fonts/Poppins/Poppins-Regular.eot');
-  src: url('fonts/Poppins/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Poppins/Poppins-Regular.woff') format('woff'),
-      url('fonts/Poppins/Poppins-Regular.ttf') format('truetype'),
-      url('fonts/Poppins/Poppins-Regular.svg#Poppins-Regular') format('svg');
+  font-family: 'InterRegular';
+  src: url('fonts/Inter/Inter-Regular.eot');
+  src: url('fonts/Inter/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Inter/Inter-Regular.woff') format('woff'),
+  url('fonts/Inter/Inter-Regular.ttf') format('truetype'),
+  url('fonts/Inter/Inter-Regular.svg#Inter-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+}
+//medium-500
+@font-face {
+  font-family: 'InterMedium';
+  src: url('fonts/Inter/Inter-Medium.eot');
+  src: url('fonts/Inter/Inter-Medium.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Inter/Inter-Medium.woff') format('woff'),
+  url('fonts/Inter/Inter-Medium.ttf') format('truetype'),
+  url('fonts/Inter/Inter-Medium.svg#Inter-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+//SemiBold
+@font-face {
+  font-family: 'InterSemiBold';
+  src: url('fonts/Inter/Inter-SemiBold.eot');
+  src: url('fonts/Inter/Inter-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Inter/Inter-SemiBold.woff') format('woff'),
+  url('fonts/Inter/Inter-SemiBold.ttf') format('truetype'),
+  url('fonts/Inter/Inter-SemiBold.svg#Inter-SemiBold') format('svg');
+
+  font-weight: 600;
+  font-style: normal;
+}
+//bold-700
+@font-face {
+  font-family: 'InterBold';
+  src: url('fonts/Inter/Inter-Bold.eot');
+  src: url('fonts/Inter/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Inter/Inter-Bold.woff') format('woff'),
+  url('fonts/Inter/Inter-Bold.ttf') format('truetype'),
+  url('fonts/Inter/Inter-Bold.svg#Inter-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+//Robotofont
+@font-face {
+  font-family: 'robotoregular';
+  src: url('fonts/Roboto-Regular-webfont.eot');
+  src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+  url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+  url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'PoppinsSemiBold';
-  src: url('fonts/Poppins/Poppins-SemiBold.eot');
-  src: url('fonts/Poppins/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
-      url('fonts/Poppins/Poppins-SemiBold.woff') format('woff'),
-      url('fonts/Poppins/Poppins-SemiBold.ttf') format('truetype'),
-      url('fonts/Poppins/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
-  font-weight: 600;
+  font-family: 'Robotomedium';
+  src: url('fonts/Roboto-Medium-webfont.eot');
+  src: url('fonts/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Roboto-Medium-webfont.woff') format('woff'),
+  url('fonts/Roboto-Medium-webfont.ttf') format('truetype'),
+  url('fonts/Roboto-Medium-webfont.svg#Robotomedium') format('svg');
+  font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
-// @font-face {
-//   font-family: 'robotoregular';
-//   src: url('fonts/Roboto-Regular-webfont.eot');
-//   src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-//   url('fonts/Roboto-Regular-webfont.woff') format('woff'),
-//   url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
-//   url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
-//   font-weight: normal;
-//   font-style: normal;
-// }
 
-// @font-face {
-//   font-family: 'Robotomedium';
-//   src: url('fonts/Roboto-Medium.eot');
-//   src: url('fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
-//   url('fonts/Roboto-Medium.woff') format('woff'),
-//   url('fonts/Roboto-Medium.ttf') format('truetype'),
-//   url('fonts/Roboto-Medium.svg#Robotomedium') format('svg');
-//   font-weight: normal;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('fonts/Roboto-Light-webfont.eot');
+  src: url('fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Roboto-Light-webfont.woff') format('woff'),
+  url('fonts/Roboto-Light-webfont.ttf') format('truetype'),
+  url('fonts/Roboto-Light-webfont.svg#Robotomedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #F9F9F9;
+@body-bg:               #F6F6F5;
 //** Global text color on `<body>`.
-@text-color:            #151c28;
-@text-color-1:          rgba(21, 28, 40,0.7);
-
-
+@text-color:            #718096;
+@text-heading:         #05080E;
 
 //** Global textual link color.
 @link-color:            @brand-primary;
@@ -179,36 +167,22 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  'PoppinsRegular', 'Arial', sans-serif;
-@font-family-serif:       'PoppinsRegular', 'Arial', sans-serif;
+@font-family-sans-serif:  'InterMedium', 'Arial', sans-serif;
+@font-family-serif:       'InterMedium', 'Arial', sans-serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-@font-family-monospace:   'PoppinsRegular', 'Arial', sans-serif;
+@font-family-monospace:   'InterMedium', 'Arial', sans-serif;
 @font-family-base:        @font-family-sans-serif;
-//Poppins 
-@font-family-black:        'PoppinsBlack';
-@font-family-extrabold:    'PoppinsExtraBold';
-@font-family-bold:         'PoppinsBold';
-@font-family-semibold:     'PoppinsSemiBold';
-@font-family-medium:       'PoppinsMedium';
-@font-family-thin:         'PoppinsThin';
-@font-family-extralight:   'PoppinsExtraLight';
-@font-family-light:        'PoppinsLight';
-
-
 
 @font-size-base:          13px;
-@font-size-Extralarge:    68px; // ~18px
-@font-size-large:         22px;
-@font-size-small:         16px;
-@font-size-extrasmall:    14px; 
-@font-size-xxsmall:       12px; // ~12px
+@font-size-large:         18px; // ~18px
+@font-size-small:         11px; // ~12px
 
-@font-size-h1:            32px; // ~36px
-@font-size-h2:            24px; // ~30px
-@font-size-h3:            18px; // ~24px
-@font-size-h4:            15px; // ~18px
+@font-size-h1:            32px; //floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            24px; //floor((@font-size-base * 1.71)); // ~30px
+@font-size-h3:            16px; //ceil((@font-size-base * 1.29)); // ~24px
+@font-size-h4:            15px; //((@font-size-base * 1.14)); // ~18px
 @font-size-h5:            @font-size-base;
-@font-size-h6:            11px; // ~12px
+@font-size-h6:            12px; //ceil((@font-size-base * 0.86)); // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base:        1.428571429; // 20/14
@@ -216,9 +190,9 @@
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
-@headings-font-family:    inherit;
-@headings-font-weight:    500;
-@headings-line-height:    1.5;
+@headings-font-family:    'InterMedium', 'Arial', sans-serif;
+@headings-font-weight:    normal;
+@headings-line-height:    1.21875;
 @headings-color:          #000;
 
 
@@ -232,7 +206,6 @@
 @icon-font-name:          "glyphicons-halflings-regular";
 //** Element ID within SVG icon file.
 @icon-font-svg-id:        "glyphicons_halflingsregular";
-@icon-color :         #4f5975;
 
 
 //== Components
@@ -245,9 +218,6 @@
 @padding-large-vertical:    13px;
 @padding-large-horizontal:  16px;
 
-@padding-extralarge-vertical:    2em;
-@padding-extralarge-horizontal:  3em;
-
 @padding-small-vertical:    2px;
 @padding-small-horizontal:  4px;
 
@@ -256,16 +226,13 @@
 
 @line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
 @line-height-small:         1.5;
-@line-height-extralarge:    2.67;
 
 @border-radius-base:        6px;
 @border-radius-large:       12px;
-@border-radius-extralarge:  16px;
-@border-radius-small:       8px;
-@border-radius-extrasmall:  4px;
+@border-radius-small:       2px;
 
 //** Global color for active items (e.g., navs or dropdowns).
-@component-active-color:    #fff;
+@component-active-color:   #fff;
 //** Global background color for active items (e.g., navs or dropdowns).
 @component-active-bg:       @brand-primary;
 
@@ -286,15 +253,15 @@
 
 //** Default background color used for all tables.
 @table-bg:                      #fff;
+@table-text:                    @text-heading;
 //** Background color used for `.table-striped`.
 @table-bg-accent:               rgba(162,162,162,.06);
 //** Background color used for `.table-hover`.
-@table-bg-hover:                #eee;
-@table-bg-active:               rgba(46,91,255,.03);
-@table-header-bg:               rgba(189, 206, 228, 0.35);
+@table-bg-hover:                rgba(46, 91, 255, 0.03);
+@table-bg-active:               rgba(46, 91, 255, 0.03);
 
 //** Border color for table and cell borders.
-@table-border-color:            rgba(0,0,0,.05);
+@table-border-color:            #eee;
 
 
 //== Buttons
@@ -302,28 +269,22 @@
 //## For each of Bootstrap's buttons, define text, background and border color.
 
 @btn-font-weight:                normal;
-@btn-height-base:                44px;
-@btn-minwidth-base:              120px;
 
-@btn-default-color:              @text-muted;
-@btn-default-bg:                 rgba(113, 123, 154,0.1);
-@btn-default-border:             transparent;
+@btn-default-color:              @text-color;
+@btn-default-bg:                 @body-bg;
+@btn-default-border:             #D8D8D8;
 
 @btn-primary-color:              #fff;
 @btn-primary-bg:                 @brand-primary;
-@btn-primary-border:             @brand-primary;
-
-@btn-secondary-color:              #fff;
-@btn-secondary-bg:                 @brand-secondary;
-@btn-secondary-border:             @brand-secondary;
+@btn-primary-border:             darken(@btn-primary-bg, 5%);
 
 @btn-success-color:              #fff;
 @btn-success-bg:                 @brand-success;
-@btn-success-border:             @brand-success;
+@btn-success-border:             darken(@btn-success-bg, 5%);
 
 @btn-info-color:                 #fff;
 @btn-info-bg:                    @brand-info;
-@btn-info-border:                @brand-info;
+@btn-info-border:                darken(@btn-info-bg, 5%);
 
 @btn-warning-color:              #fff;
 @btn-warning-bg:                 @brand-warning;
@@ -334,21 +295,11 @@
 @btn-danger-border:              darken(@btn-danger-bg, 5%);
 
 @btn-link-disabled-color:        transparent;
-@btn-group-border-color:         #dedee9;
 
 // Allows for customizing button radius independently from global border radius
 @btn-border-radius-base:         @border-radius-base;
 @btn-border-radius-large:        @border-radius-large;
 @btn-border-radius-small:        @border-radius-small;
-@btn-border-radius-extralarge:   @border-radius-extralarge;
-@btn-border-radius-extrasmall:   @border-radius-extrasmall;
-
-
-//switch
-@switch-bg :   rgba(189, 206, 228, 0.35);
-@switch-border-radius : @border-radius-extrasmall;
-@switch-height : 36px;
-@switch-btn-height: 32px;
 
 
 //== Forms
@@ -361,21 +312,19 @@
 @input-bg-disabled:              @gray-lighter;
 
 //** Text color for `<input>`s
-@input-color:                    #4a526c;
+@input-color:                    #202020;
 //** `<input>` border color
-@input-border:                   #b7b9be;
+@input-border:                   #e0e0e0;
 @input-border-focus:             #aeaeae;
 
 // TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
 //** Default `.form-control` border radius
 // This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
-@input-border-radius:            @border-radius-base;
+@input-border-radius:            0;
 //** Large `.form-control` border radius
 @input-border-radius-large:      @border-radius-large;
 //** Small `.form-control` border radius
 @input-border-radius-small:      @border-radius-small;
-
-@input-border-radius-extrasmall:      @border-radius-extrasmall;
 
 //** Border color for inputs on focus
 @input-border-focus:             #aeaeae;
@@ -384,11 +333,11 @@
 @input-color-placeholder:        #999;
 
 //** Default `.form-control` height
-@input-height-base:              48px; //(@line-height-computed + (@padding-base-vertical * 2) + 2);
+@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
 //** Large `.form-control` height
 @input-height-large:             (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
 //** Small `.form-control` height
-@input-height-small:             40px;
+@input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
 
 //** `.form-group` margin
 @form-group-margin-bottom:       0;
@@ -542,16 +491,16 @@
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
 
-@navbar-default-bg:                #fff; //@brand-primary;
+@navbar-default-bg:                @brand-primary;
 @navbar-default-hover-bg:          transparent;
-@navbar-default-color:             @text-color;
+@navbar-default-color:             rgba(255, 255, 255, 0.6);
 @navbar-default-border:            transparent;
 
 // Navbar links
 @navbar-default-link-color:                rgba(255, 255, 255, 0.6);
 @navbar-default-link-hover-color:          @text-color;
 @navbar-default-link-hover-bg:             @navbar-default-link-active-bg;
-@navbar-default-link-active-color:         @text-color;
+@navbar-default-link-active-color:         #fff;
 @navbar-default-link-active-bg:            rgba(0, 0, 0, 0.07);
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
@@ -626,7 +575,7 @@
 //
 //##
 
-@pagination-color:                     #333;
+@pagination-color:                     @text-color;
 @pagination-bg:                        #fff;
 @pagination-border:                    #ddd;
 
@@ -634,8 +583,8 @@
 @pagination-hover-bg:                  rgba(0,0,0,.1);
 @pagination-hover-border:              #ddd;
 
-@pagination-active-color:              #fff;
-@pagination-active-bg:                 @brand-primary;
+@pagination-active-color:              #000000;
+@pagination-active-bg:                 @brand-secondary;
 @pagination-active-border:             #fff;
 
 @pagination-disabled-color:            #777777;
@@ -766,6 +715,8 @@
 //
 //##
 
+//**Modal outer border radius
+@modal-border-radius: @border-radius-large;
 //** Padding applied to the modal body
 @modal-inner-padding:         1em;
 
@@ -778,6 +729,7 @@
 @modal-content-bg:                             #fff;
 //** Modal content border color
 @modal-content-border-color:                   rgba(0,0,0,.2);
+
 //** Modal content border color **for IE8**
 @modal-content-fallback-border-color:          #999;
 
@@ -786,13 +738,13 @@
 //** Modal backdrop opacity
 @modal-backdrop-opacity:      .5;
 //** Modal header border color
-@modal-header-border-color:   transparent;
+@modal-header-border-color:   rgba(0, 0, 0, 0.1);
 //** Modal footer border color
 @modal-footer-border-color:   @modal-header-border-color;
 
-@modal-lg:                    900px;
-@modal-md:                    500px;
-@modal-sm:                    300px;
+@modal-lg:                    980px;
+@modal-md:                    720px;
+@modal-sm:                    360px;
 
 
 //== Alerts
@@ -882,11 +834,10 @@
 //##
 
 @panel-bg:                    #fff;
-@panel-heading-bg:            rgba(236, 239, 242, 0.23);
 @panel-body-padding:          @padding-base-horizontal;
-@panel-heading-padding:       @padding-extralarge-vertical @padding-extralarge-horizontal;//@panel-body-padding;
+@panel-heading-padding:       @panel-body-padding;
 @panel-footer-padding:        @padding-base-horizontal;
-@panel-border-radius:         @border-radius-extralarge;
+@panel-border-radius:         @border-radius-base;
 
 //** Border color for elements within panels
 @panel-inner-border:          #f0f0f0;
@@ -928,7 +879,7 @@
 //** Thumbnail border color
 @thumbnail-border:            #ddd;
 //** Thumbnail border radius
-@thumbnail-border-radius:     @border-radius-extrasmall;
+@thumbnail-border-radius:     4px;
 
 //** Custom text color for thumbnail captions
 @thumbnail-caption-color:     @text-color;
@@ -1017,7 +968,7 @@
 
 @pre-bg:                      #f5f5f5;
 @pre-color:                   @gray-dark;
-@pre-border-color:            #b7b9be;
+@pre-border-color:            #cacfde;
 @pre-scrollable-max-height:   340px;
 
 
@@ -1028,11 +979,7 @@
 //** Horizontal offset for forms and lists.
 @component-offset-horizontal: 180px;
 //** Text muted color
-@text-muted:                  #717b9a;
-@text-gray:                   #616982;
-@label-muted:                 #8083a3;
-@text-coolgray:               #8f92a1;
-                 
+@text-muted:                  @gray-light;
 //** Abbreviations and acronyms border color
 @abbr-border-color:           @gray-light;
 //** Headings small color
@@ -1051,16 +998,3 @@
 @dl-horizontal-breakpoint:    @grid-float-breakpoint;
 //** Horizontal line color.
 @hr-border:                   @gray-lighter;
-
-
-//text alignment 
-@text-center:           center;
-@text-left:             left;
-@text-right:            right;
-
-/***wizard styles***/
-//Wizard variables
-@wm-wizard-nav-border: #cacfd3;
-
-// @wm-wizard-active-color: @brand-success;
-// @wm-wizard-current-color: @brand-success;
